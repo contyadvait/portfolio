@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>About Advait</title>
 </head>
 <body>
     <img src="images/Advait.jpg" alt="Advait's photo" class="photo">
     <div class="outlinebox">
-        <h1 class="leftalign">About Advait</h1>
+        <h1 class="leftalign title">About Advait</h1>
     </div>
 
-    <div class="description">
-        <h1 class="aboutme" style="padding-bottom: 1px;">About me</h1>
+    <div class="description" style="padding-top: 50px; padding-bottom: 50px;">
+        <h1 class="aboutme title" style="padding-bottom: 1px;">About me</h1>
         <body style="padding-top: 1px;">
             - Love coding in Swift and Python<br>
             - Enjoy photography, coding and playing the piano in my free time<br>
@@ -24,20 +25,53 @@
         </body>
     </div>
 
-    <div class="outlinebox2">
-        <h2>Downloads</h2>
-        <div class="padded fitstreak container">
+    <div class="outlinebox2 topbottompad center">
+        <h2 class="title">Downloads</h2>
+        <div class="padded container">
             <div class="box">
-                <img src="images/fitstreak.png" class="appicon">
+                <img src="images/appicons/fitstreak.png" class="appicon">
             </div>
-            <div class="box">
-                <h3>FitStreak</h3>
-                <body class="description">
-                    A fitness tracker, made part of the Swift Accelerator Programme of 2023. 
+            <div class="box2">
+                <body class="app-description">
+                    <h3 class="closer title">FitStreak</h3>
+                    <p>A fitness tracker, made part of the Swift Accelerator Programme of 2023.</p>
+                    <a href="https://app.swiftinsg.org/fitstreak"><img src="images/appstore.svg" alt="My Happy SVG" class="svg"></a>
                 </body>
-                <button class="download">Download</button>
+            </div>
+        </div>
+        <div class="padded container" style="padding-top: 40px;">
+            <div class="box">
+                <img src="images/appicons/historian.png" class="appicon">
+            </div>
+            <div class="box2">
+                <body class="app-description">
+                    <h3 class="closer title">Historian</h3>
+                    <p>The missing clipboard history for macOS.</p>
+                    <a href="https://github.com/contyadvait/Historian/releases/tag/major"><button class="button-4">Download from GitHub</button></a>
+                </body>
             </div>
         </div>
     </div>
+
+    <!--Images-->
+    <div>
+        <h2>Gallery</h2>
+    <div class="gallery" style="align-items: center; margin: auto; padding-top: 50px;">
+        <span style="--i:1">
+          <img src="images/gallery/scoot.jpg" alt="" />
+        </span>
+        <span style="--i:2">
+          <img src="images/gallery/sia.jpg" alt="" />
+        </span>
+        <span style="--i:3">
+          <img src="images/gallery/symetry.jpeg"" />
+        </span>
+        <span style="--i:4">
+          <img src="images/gallery/turkish.jpg" alt="" />
+        </span>
+      </div>
+      <p style="padding-top: 100px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Thanks to Sparshcodes on <a href="https://codepen.io/sparshgupta007/pen/gOeypaj">CodePen</a> for this image effect!</p>
+    </div>
+    <div></div>
 </body>
 </html>

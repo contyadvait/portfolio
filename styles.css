@@ -15,6 +15,7 @@ regular {
     width: 613px; 
     height: 276px; 
     background: white;
+    padding: 10px;
 }
 
 .leftalign {
@@ -82,17 +83,149 @@ h2 {
 .container {
     display: flex;
     width: 100%;
-    gap: 10px; 
-    padding: 20px;
 }
   
 .box {
     flex: 1;
-    padding: 20px;
-    text-align: center; 
+    text-align: left; 
+}
+
+.box2 {
+    flex: 4;
+    text-align: left; 
 }
 
 h3 {
     font-family: "Edu AU VIC WA NT Hand", cursive;
-    font-size: 60px;
+
+}
+
+.align-left {
+    text-align: left;
+}
+
+.app-description {
+    font-size: 24px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.svg {
+    flex: 1;
+    width: 15%;
+    height: auto;
+}
+
+.closer {
+    padding: -10px;
+}
+
+/* Thank you to CSS Scan button examplses for this */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+.topbottompad {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery-settings {
+    place-content: center;
+    align-items: center;
+}  
+
+  .gallery{
+    position:relative;
+    width:300px;
+    height:200px;
+    transform-style:preserve-3d;
+    animation:rotate 35s linear infinite;
+  }
+  
+  @keyframes rotate{
+    from{
+      transform:perspective(2400px) rotateY(0deg);
+    }
+    
+    to{
+      transform:perspective(2400px) rotateY(360deg);
+    }
+  }
+  
+  .gallery span{
+    position:absolute;
+    width:150%;
+    height:150%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i) * 90deg)) translateZ(760px);
+  }
+  
+  .gallery span img{
+    position:absolute;
+    width:150%;
+    height:150%;
+    object-fit:cover;
+  }
+
+.title {
+    font-family: "Edu AU VIC WA NT Hand", cursive;;
 }
