@@ -6,8 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="scripts/script.js"></script>
     <title>About Advait</title>
 </head>
 <body>
@@ -55,23 +57,35 @@
 
     <!--Images-->
     <div>
-        <h2>Gallery</h2>
-    <div class="gallery" style="align-items: center; margin: auto; padding-top: 50px;">
-        <span style="--i:1">
-          <img src="images/gallery/scoot.jpg" alt="" />
-        </span>
-        <span style="--i:2">
-          <img src="images/gallery/sia.jpg" alt="" />
-        </span>
-        <span style="--i:3">
-          <img src="images/gallery/symetry.jpeg"" />
-        </span>
-        <span style="--i:4">
-          <img src="images/gallery/turkish.jpg" alt="" />
-        </span>
-      </div>
-      <p style="padding-top: 100px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Thanks to Sparshcodes on <a href="https://codepen.io/sparshgupta007/pen/gOeypaj">CodePen</a> for this image effect!</p>
+        <h2 class="title">Gallery</h2>
+    <div class="center">
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox('img1', 'Scoot A320 taxiing')">
+                <img src="images/gallery/scoot.jpg" alt="Scoot A320 taxiing">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('img2', 'Singapore Airlines A350 Take off')">
+                <img src="images/gallery/sia.jpg" alt="Singapore Airlines A350 Take off">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('img3', 'Symmetry Apartments')">
+                <img src="images/gallery/symetry.jpeg" alt="Symmetry Apartments">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('img4', 'Turkish Dreamliner in the sky')">
+                <img src="images/gallery/turkish.jpg" alt="Turkish Dreamliner in the sky">
+            </div>
+        </div>
+    
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" class="lightbox-content">
+            <div id="caption" class="caption"></div>
+        </div>
+        <p class="padded">Click on them to learn more!</p>
     </div>
-    <div></div>
+    </div>
+
+    <div class="outlinebox2 topbottompad">
+        <h2 class="title">Socials</h2>
+        <p class="padded"><a href="https://github.com/contyadvait"><img src="images/icons/github-mark.svg" class="socialimage"></a>    contyadvait</p>
+    </div>
 </body>
 </html>

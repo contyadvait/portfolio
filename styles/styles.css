@@ -187,45 +187,121 @@ h3 {
     padding-bottom: 20px;
 }
 
-.gallery-settings {
-    place-content: center;
-    align-items: center;
-}  
-
-  .gallery{
-    position:relative;
-    width:300px;
-    height:200px;
-    transform-style:preserve-3d;
-    animation:rotate 35s linear infinite;
-  }
-  
-  @keyframes rotate{
-    from{
-      transform:perspective(2400px) rotateY(0deg);
-    }
-    
-    to{
-      transform:perspective(2400px) rotateY(360deg);
-    }
-  }
-  
-  .gallery span{
-    position:absolute;
-    width:150%;
-    height:150%;
-    transform-origin:center;
-    transform-style:preserve-3d;
-    transform:rotateY(calc(var(--i) * 90deg)) translateZ(760px);
-  }
-  
-  .gallery span img{
-    position:absolute;
-    width:150%;
-    height:150%;
-    object-fit:cover;
-  }
 
 .title {
     font-family: "Edu AU VIC WA NT Hand", cursive;;
+}
+
+.socialimage {
+    width: 50px;
+    height: auto;
+}
+
+/* Add this to your styles/styles.css file */
+
+/* General container styles for responsiveness */
+.container {
+    flex-wrap: wrap;
+}
+
+/* Make sure images scale properly */
+.photo {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.appicon {
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+}
+
+/* Adjust padding and margins for smaller screens */
+.padded {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.outlinebox {
+    width: auto;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+}
+
+/* Gallery items adjustment for smaller screens */
+.gallery-item img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/* Button styles */
+.button-4 {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Responsive typography */
+h1, h2, h3, .title {
+    font-size: 5vw; /* 5% of viewport width, adjust as needed */
+    padding-left: 10px;
+}
+
+/* Social media icons */
+.socialimage {
+    width: 40px;
+    height: auto;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .outlinebox {
+        width: auto;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+
+    .box, .box2 {
+        flex: 1 100%;
+    }
+
+    .padded {
+        padding: 20px 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 6vw; /* Responsive font size */
+    }
+
+    .description {
+        font-size: 4vw; /* Adjust based on the viewport width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .outlinebox {
+        padding: 5px;
+    }
+
+    h1, h2, h3 {
+        font-size: 8vw; /* Further adjust for very small screens */
+    }
+
+    .description {
+        font-size: 5vw;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-4 {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
